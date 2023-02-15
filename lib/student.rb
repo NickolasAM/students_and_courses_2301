@@ -11,5 +11,9 @@ class Student
   def log_score(score)
     scores << score
   end
+
+  def grade
+    scores.sum(0.0) / scores.size
+  end
 end
 
