@@ -1,6 +1,8 @@
 class Student
-
-  def initialize(name)
-    @name = name
+  attr_reader :name,
+              :age
+  def initialize(attributes)
+    @name = attributes.fetch(:name)
+    @age = attributes.fetch(:age)
   end
 end
