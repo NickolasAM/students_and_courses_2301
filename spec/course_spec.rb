@@ -46,7 +46,4 @@ RSpec.describe Course do
       expect(course.full?).to eq(true)
     end
   end
-
-
-
 end
