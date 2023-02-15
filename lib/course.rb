@@ -10,11 +10,14 @@ class Course
   end
 
   def full?
-    return false
+    if @students == []
+      false
+    else
+      true
+    end
   end
 
-
-
-
-
+  def enroll(student)
+    students << student
+  end
 end
